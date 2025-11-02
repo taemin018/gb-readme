@@ -77,7 +77,8 @@
 
 ## 👩‍💻 담당 업무
 
-<img width="836" height="718" alt="스크린샷 2025-11-03 오전 1 32 43" src="https://github.com/user-attachments/assets/9f05696c-247e-4cb4-81fd-008e3701cf89" />
+
+<img width="1019" height="207" alt="crewstation_back" src="https://github.com/user-attachments/assets/74422486-fb95-4830-ad34-64ad745549c7" />
 
 
 
