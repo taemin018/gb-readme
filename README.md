@@ -112,13 +112,13 @@
 
 <br>
 
-📊 QA 테스트
+## 📊 QA 테스트
 
 <img width="836" height="718" alt="스크린샷 2025-11-03 오전 1 32 43" src="https://github.com/user-attachments/assets/cdbc9612-701e-44bf-ae8f-78e851b76e43" />
 
 
 
-
+## 🚨 오류 상황들
 
 
 
