@@ -77,7 +77,7 @@
 
 ## 👩‍💻 담당 업무
 
----[CrewStation_QA테스트_김태민.xlsx](https://github.com/user-attachments/files/23291544/CrewStation_QA._.xlsx)
+<img width="1148" height="279" alt="스크린샷" src="https://github.com/user-attachments/files/23291544/CrewStation_QA._.xlsx" />
 
 
 
