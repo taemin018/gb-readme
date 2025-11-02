@@ -73,5 +73,17 @@
 
 <img width="6222" height="6184" alt="Image" src="https://github.com/user-attachments/assets/6e275336-0946-4425-aae2-ccca73d4c320" />
 
----
+
+
+## 👩‍💻 담당 업무
+
+---[CrewStation_QA테스트_김태민.xlsx](https://github.com/user-attachments/files/23291544/CrewStation_QA._.xlsx)
+
+
+
+
+
+
+
+
 
