@@ -1,4 +1,4 @@
-<img width="836" height="718" alt="스크린샷 2025-11-03 오전 1 32 43" src="https://github.com/user-attachments/assets/9f05696c-247e-4cb4-81fd-008e3701cf89" /># 🚀 Crew Station
+# 🚀 Crew Station
 
 > 본 서비스는 여행자들이 연결되는 소셜 여행 플랫폼
 > 여행 동행 모집, 지역 상품 판매, 여행 일기 작성을 한 곳에서 제공합니다.
@@ -77,7 +77,7 @@
 
 ## 👩‍💻 담당 업무
 
-![Uploading 스크린샷 2025-11-03 오전 1.32.43.png…](
+<img width="836" height="718" alt="스크린샷 2025-11-03 오전 1 32 43" src="https://github.com/user-attachments/assets/9f05696c-247e-4cb4-81fd-008e3701cf89" />
 
 
 
