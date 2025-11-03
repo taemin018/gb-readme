@@ -122,13 +122,21 @@
 
 💥문제 상황
 
-Caused by: java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "<local3>" is null at org.mybatis.spring.MyBatisSystemException: ### Error querying database. Cause: java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "<local3>" is null ### The error may exist in com/example/crewstation/mapper/member/MemberMapper.xml ### The error may involve com.example.crewstation.mapper.member.MemberMapper.findAdminMembers ### Cause: java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "<local3>" is null
+Caused by: java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "" is null
+at org.mybatis.spring.MyBatisSystemException:
+### Error querying database.
+Cause: java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "" is null
+### The error may exist in com/example/crewstation/mapper/member/MemberMapper.xml
+### The error may involve com.example.crewstation.mapper.member.MemberMapper.findAdminMembers
+### Cause: java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "" is null
+
 
 🔍 문제 원인
-- 배포를 한 후 테스트를 하는 중 Enum 타입에 있는 쿼리가 빈문자열로 들어가서 회원 관리 목록이 안나왔다.
+- DB에 저장된 member_gender 컬럼 값이 빈문자열('') 이라서 Enum(Gender) 매핑 과정에서 Enum.valueOf("")로 들어가서 목록이 안불러와지는 문제 발생
+- DB값이 enum 정의에 없는 문자열이라서 NullPointerException이 발생
 
 🛠️ 해결 방안
-
+- 관리자 회원가입 시 gender가 비어 있을 경우 기본값을 넣도록 수정
 <img width="1013" height="504" alt="스크린샷 2025-11-03 오후 7 38 14" src="https://github.com/user-attachments/assets/b95e8a39-73fd-4a43-a8df-843b690679d1" />
 
 
