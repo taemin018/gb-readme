@@ -122,13 +122,14 @@
 
 💥문제 상황
 
-Caused by: java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "" is null
-at org.mybatis.spring.MyBatisSystemException:
-### Error querying database.
-Cause: java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "" is null
-### The error may exist in com/example/crewstation/mapper/member/MemberMapper.xml
-### The error may involve com.example.crewstation.mapper.member.MemberMapper.findAdminMembers
-### Cause: java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "" is null
+Caused by: java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "<local3>" is null
+    at org.mybatis.spring.MyBatisSystemException:
+    ### Error querying database.
+    Cause: java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "<local3>" is null
+    ### The error may exist in com/example/crewstation/mapper/member/MemberMapper.xml
+    ### The error may involve com.example.crewstation.mapper.member.MemberMapper.findAdminMembers
+    ### Cause: java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "<local3>" is null
+
 
 
 🔍 문제 원인
