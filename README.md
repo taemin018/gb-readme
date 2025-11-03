@@ -141,18 +141,23 @@ Cause: java.lang.NullPointerException: Cannot invoke "String.hashCode()" because
 
 
 💥문제 상황
+
 <img width="820" height="442" alt="스크린샷 2025-09-30 오후 11 43 05" src="https://github.com/user-attachments/assets/9b48432f-48ff-4b22-b93d-def2d90670ae" />
+
 
 🔍 문제 원인
 - AWS S3의 presigned URL이 Redis에 캐시된 상태에서 만료되었다.
-- Redis에 남은 만료된 URL을 계속 반환하면서 브라우저가 ERR_BLOCKED_BY_ORB로 차단하는 현상 발생
+- Redis가 만료된 URL을 계속 반환하면서 브라우저가 ORB 정책으로 요청을 차단
+- 브라우저 보안 정책(CORS/ORB) 에 의해 이미지가 차단되는 현상이 발생
+
 
 🛠️ 해결 방안
+
 <img width="840" height="448" alt="스크린샷 2025-11-03 오후 8 12 07" src="https://github.com/user-attachments/assets/65352975-077b-4332-884f-9a9b10301abd" />
 
-- redis-cli FLUSHALL 로 캐시를 비운 후 정상 작동했지만
-- 이전에는 presigned URL을 캐시하거나 불필요하게 오래 보관했지만
-- 메인페이지에 목록 같은경우는 수정/등록이 자주 발생하기 때문에 캐시를 없애고 코드를 수정했다.
+
+- redis-cli FLUSHALL 명령어로 캐시를 초기화한 뒤, presigned URL을 발급하자 정상적으로 이미지가 표시되었음
+- 동일한 문제가 반복되지 않도록, 캐시 로직을 제거하고 presigned URL을 매번 새로 발급하도록 코드 수정
 
 
 
