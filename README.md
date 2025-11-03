@@ -184,7 +184,7 @@ Caused by: java.lang.NullPointerException: Cannot invoke "String.hashCode()" bec
 
  1차 프로젝트보다 많은 기술을 실제로 적용해 볼 수 있어서 실무에 대한 경험을 쌓을 수 있었습니다.
  AWS S3, IAM, Redis, Spring Security, JWT 등 다양한 기술을 다뤄보면서 백엔드 전반에 대한 감을 잡을 수 있었고,
- 서버 배포를 먼저 해보고 CI/CD 자동화 구축을 진행하면서 확실히 자동화 구축을 진행하면서 정말 편하다는 것을 느꼈습니다.
+ 서버 배포를 먼저 진행한 뒤 CI/CD 자동화 구축을 하면서, 자동화 환경의 효율성과 필요성을 확실히 느꼈습니다.
 
 아쉬웠던 점 
 
